@@ -1,0 +1,151 @@
+@-webkit-keyframes moveWheel {
+	0%{
+		left:0px;
+	}
+	5%{
+		left:120px;
+	}
+	10%{
+		left:240px;
+	}
+	15%{
+		left:360px;
+	}
+	20%{
+		left:480px;
+	}
+	25%{
+		left:600px;
+	}
+	30%{
+		left:700px;
+	}
+	35%{
+		left:750px;
+	}
+	40%{
+		left:790px;
+	}
+	45%{
+		left:800px;
+	}
+	50%{
+		left:790px;
+	}
+	55%{
+		left:750px;
+	}
+	60%{
+		left:700px;
+	}
+	65%{
+		left:600px;
+	}
+	70%{
+		left:480px;
+	}
+	75%{
+		left:360px;
+	}
+	80%{
+		left:240px;
+	}
+	85%{
+		left:120px;
+	}
+	90%{
+		left:60px;
+	}
+	95%{
+		left:30px;
+	}
+	100%{
+		left:0px;
+	}
+}
+
+@-webkit-keyframes rotateWheel {
+	0%{
+		-webkit-transform:rotate(0deg);
+		left:0px;
+	}
+	5%{
+		-webkit-transform:rotate(-15deg);
+		left:15px;
+	}
+	10%{
+		-webkit-transform:rotate(-30deg);
+	}
+	15%{
+		-webkit-transform:rotate(-45deg);
+	}
+	20%{
+		-webkit-transform:rotate(-60deg);
+	}
+	25%{
+		-webkit-transform:rotate(-75deg);
+	}
+	30%{
+		-webkit-transform:rotate(-90deg);
+	}
+	35%{
+		-webkit-transform:rotate(-105deg);
+	}
+	40%{
+		-webkit-transform:rotate(-120deg);
+	}
+	45%{
+		-webkit-transform:rotate(-135deg);
+	}
+	50%{
+		-webkit-transform:rotate(-150deg);
+	}
+	55%{
+		-webkit-transform:rotate(-165deg);
+	}
+	60%{
+		-webkit-transform:rotate(-180deg);
+	}
+	65%{
+		-webkit-transform:rotate(-195deg);
+	}
+	70%{
+		-webkit-transform:rotate(-210deg);
+	}
+	75%{
+		-webkit-transform:rotate(-225deg);
+	}
+	80%{
+		-webkit-transform:rotate(-240deg);
+	}
+	85%{
+		-webkit-transform:rotate(-255deg);
+	}
+	90%{
+		-webkit-transform:rotate(-270deg);
+	}
+	95%{
+		-webkit-transform:rotate(-285deg);
+	}
+	100%{
+		-webkit-transform:rotate(-300deg);
+	}
+}
+
+
+#theWheel{
+	background:url('wheel.png') no-repeat;
+	height:316px;
+	width:320px;
+	position:absolute;
+	left:0px;
+	-webkit-animation:
+	rotateWheel 1s infinite 2s,
+	moveWheel 20s infinite 2s;
+	-webkit-transform-origin:160px 158px;
+	-webkit-transition:all 1s ease-in-out 1s;
+}
+
+
+#theWheel:hover{
+}
